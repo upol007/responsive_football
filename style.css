@@ -5,10 +5,15 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    background-color: #2D25A0;
+    
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .top-part{
+    width: 100%;
+    background-color: #2D25A0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -22,6 +27,7 @@ body{
     font-size: 64px;
     line-height: 30px;
 }
+
 button {
   background-color: #E02C6D; 
   width: 168px;
@@ -41,6 +47,7 @@ button {
 
 button:hover{
     border: 5px solid rgba(54, 231, 122, 0.863);
+    transform: scale(1.5)
     
 }
 button a{
@@ -76,6 +83,7 @@ button a{
     align-items: flex-start;
     color: #18191F;
     font-size: 28px;
+    margin-right: 1px;
     
 }
 .players img{
@@ -91,8 +99,21 @@ button a{
     padding: 0px 20px 20px;
 }
 /* 3rd section */
-
-
+#bottom{
+    background-color: rgba(225, 159, 238, 0.068);
+}
+.bottom-banner{
+    padding-left: 156px;
+    color: #241e1e;
+    font-size: 70px;
+    line-height: 30px;
+    
+}
+.banner-logo:hover{
+    transform: scale(.7) rotate(30deg);
+    transition: transform 1s ease-in-out;
+    
+}
 
 /* Footer section */
 .footer-wrap{
@@ -100,4 +121,17 @@ button a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+/* Media Queries */
+/* Mobile Devices */
+@media only screen and (max-width:688px){
+    .container,  .footer-wrap{
+        width: 100%;
+    }
+    .top-part, .players, .footer-wrap{
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        
+    }
+    
 }
