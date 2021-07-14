@@ -105,7 +105,7 @@ button a{
 .bottom-banner{
     padding-left: 156px;
     color: #241e1e;
-    font-size: 70px;
+    font-size: 50px;
     line-height: 30px;
     
 }
@@ -142,9 +142,4 @@ button a{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         flex-direction: column;
-        background-color: darkcyan;
-      
-        
-    
-    
 }
