@@ -125,13 +125,26 @@ button a{
 /* Media Queries */
 /* Mobile Devices */
 @media only screen and (max-width:688px){
-    .container,  .footer-wrap{
-        width: 100%;
-    }
-    .top-part, .players, .footer-wrap{
+    
+    .top-part, .players, .bottom, .footer-wrap{
+        
+        display: grid;
         grid-template-columns: repeat(1,1fr);
         flex-direction: column;
-        
     }
+     
+}
+    
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .top-part, .players, .bottom ,.footer-wrap{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        background-color: darkcyan;
+      
+        
+    
     
 }
